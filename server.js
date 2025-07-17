@@ -51,4 +51,8 @@ app.get('/ping', (req, res) => {
   res.json({ message: '中継サーバーは稼働中です' });
 });
 
+app.get('/test', (req, res) => {
+  res.json({ message: 'GETリクエスト成功', timestamp: new Date() });
+});
+
 
