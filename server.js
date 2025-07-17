@@ -46,3 +46,9 @@ app.listen(PORT, () => {
   console.log(`中継サーバーが起動中 http://localhost:${PORT}`);
 });
 
+// GET: /ping
+app.get('/ping', (req, res) => {
+  res.json({ message: '中継サーバーは稼働中です' });
+});
+
+
