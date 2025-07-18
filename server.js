@@ -54,8 +54,3 @@ app.get('/ping', (req, res) => {
 app.get('/test', (req, res) => {
   res.json({ message: 'GETリクエスト成功', timestamp: new Date() });
 });
-
-app.listen(PORT, () => {
-  console.log(`サーバーがポート ${PORT} で起動しました`);
-});
-
